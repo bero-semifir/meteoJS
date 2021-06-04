@@ -1,11 +1,33 @@
+.meteo-card, header, h1, h2 {
+    color: #9fccff;
+}
+
+body, html {
+    background-image: url("../img/nathan-anderson.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
 header{
     text-align: center;
 }
 
 .input-group{
-    width: 20em;
+    width: 20vw;
     margin: auto;
     margin-bottom: 2em ;
+}
+
+.form-row {
+    display: flex;
+    width: auto;
+}
+
+.form-row * {
+    width: 100%;
 }
 
 #meteo-container {
@@ -18,8 +40,13 @@ header{
     width: 20vw;
     min-width: fit-content;
     padding: 1em 2em;
-    border: 1px solid black;
     margin: 2em;
+    /* Pour l'effet GlassMorphism */
+    background: rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 10px;
 }
 
 .card-body{
@@ -30,4 +57,28 @@ header{
     display: flex;
     justify-content: space-around ;
     align-items: center;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 2em;
+}
+
+button {
+    color: #18263D;
+    background-color: #71A0D7;
+    border-radius: 0.5em;
+    padding: .2em;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #628ab8;
+}
+
+input {
+    border-radius: 0.5em;
+    padding: .5em;
+    border: none;
 }

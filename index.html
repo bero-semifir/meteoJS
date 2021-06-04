@@ -10,10 +10,20 @@
         <h1>Site météo</h1>
     </header>
     <main>
+        <!-- entrée utilisateur -->
         <form class="input-group">
-            <input type="text">
-            <button>Afficher</button>
+            <div class="form-row">
+                <input type="text">
+            </div>
+            <div class="form-row">
+                <button type="submit">Afficher</button>
+                <!-- en type button pour ne pas déclencher l'event "submit" -->
+                <button type="button" id="geolocBtn">Géolocaliser</button>
+            </div>
         </form>
+        <!-- Pour afficher la ville ou les erreurs -->
+        <h2 id="subtitle"></h2>
+        <!-- Zone pour afficher la météo -->
         <div id="meteo-container"></div>
     </main>
     <script src="./assets/js/meteo.js"></script>
